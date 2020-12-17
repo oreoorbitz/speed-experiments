@@ -6,8 +6,7 @@
   <title>Font optmization example</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Langar&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
-  <link rel="styleshseet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&display=swap" rel="stylesheet">  <link rel="styleshseet" href="style.css">
   <style>
     p {
       font-family: 'Langar', cursive;
@@ -22,6 +21,20 @@
       justify-content: center;
       align-items: center;
       font-size: 23px;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Andika New Basic', sans-serif;      
+    }
+    .cls-block-2 {
+      width: 90%;
+      height: 20vh;
+      background-color: blue;
+      font-size: 17px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
   </style>
 </head> 
@@ -32,6 +45,9 @@
   </p>
   <div class="cls-block">
     this block shouldn't be moved!
+    <div class="cls-block-2">
+      This block shouldn't moved either!
+    </div>
   </div>
 
 
