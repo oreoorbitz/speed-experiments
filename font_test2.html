@@ -19,23 +19,21 @@
       line-gap-override: 45%;
       advance-override: 0.07;
     }
-
+    .fallback_font {
+      letter-spacing: 0.7px;
+    }
   </style>
 
 
 </head> 
 
 <body> 
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias veniam ab impedit est fugit earum a nostrum inventore facilis vel optio temporibus enim tempora laboriosam qui, aperiam, explicabo quas.
-  </p>
-  <div class="cls-block">
-    this block shouldn't be moved!
-    <div class="cls-block-2">
-      This block shouldn't moved either!
-    </div>
-  </div>
-
+ <div class="fallback_font">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias veniam ab impedit est fugit earum a nostrum inventore facilis vel optio temporibus enim tempora laboriosam qui, aperiam, explicabo quas.
+ </div>
+ <div class="web_font">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias veniam ab impedit est fugit earum a nostrum inventore facilis vel optio temporibus enim tempora laboriosam qui, aperiam, explicabo quas.
+</div>
 
 </body>
 </html>

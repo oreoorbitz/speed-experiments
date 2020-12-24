@@ -1,9 +1,7 @@
 p {
   font-family: 'Langar', 'Liberation Serif';
   font-weight: initial;
-  letter-spacing: initial;
   word-spacing: initial;
-  line-height: ;
 }
 .cls-block {
   width: 90%;
@@ -30,4 +28,19 @@ p {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.fallback_font {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  font-family: 'Liberation Serif';
+  
+}
+
+.web_font {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  font-family:'Langar'
 }
