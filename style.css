@@ -1,5 +1,5 @@
 .cls-block-1 {
-  font-family: 'Andika New Basic', 'Liberation Serif';
+  font-family: 'Liberation Serif';
   font-weight: initial;
   word-spacing: initial;
   line-height: 1.6;
@@ -11,6 +11,7 @@
   word-spacing: initial;
   line-height: initial;
   letter-spacing: initial;
+  transition: all 100ms;
 }
 .cls-block-2 {
   width: 90%;
