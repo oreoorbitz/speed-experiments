@@ -1,11 +1,11 @@
-.cls-block-1 {
+.cls-block-1, .cls-block-2, .cls-block-3 {
   font-family: 'Liberation Serif';
   font-weight: initial;
   word-spacing: initial;
   line-height: 1.6;
   letter-spacing: 1.05px;
 }
-.cls-block-1.webFontLoaded {
+.webFontLoaded .cls-block-1 {
   font-family: 'Andika New Basic';
   font-weight: initial;
   word-spacing: initial;
@@ -13,7 +13,7 @@
   letter-spacing: initial;
   transition: all 100ms;
 }
-.cls-block-2 {
+.webFontLoaded  .cls-block-2 {
   width: 90%;
   height: 77vh;
   background-color: gray;
@@ -28,7 +28,7 @@
   font-family: 'Andika New Basic', 'Liberation Serif';
   text-align: center;      
 }
-.cls-block-3 {
+.webFontLoaded  .cls-block-3 {
   width: 90%;
   height: 60vh;
   background-color: blue;

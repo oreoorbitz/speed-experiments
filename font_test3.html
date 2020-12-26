@@ -5,26 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Font optmization example</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="alternative stylesheet" href="style.css" rel="alternate stylesheet"  title="styles" as="style" onload="this.title='';this.rel='stylesheet'">
-  <style>
-    .cls-block-1 {
-      font-family: 'Liberation Serif';
-      line-height: 1.6;
-      letter-spacing: 1.05px;
-    }
-  </style>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&display=swap" rel="alternate stylesheet"  title="styles" as="style" onload="this.title='';this.rel='stylesheet'">
+  <link rel="stylesheet" href="style.css">
   <script>
     var font = new FontFace("Andika New Basic", "url(https://fonts.gstatic.com/s/andikanewbasic/v1/taiRGn9tCp-44eleq5Q-mszJivxSeKieEUCAFz8.woff2) format('woff2')", {
       style: 'normal', unicodeRange: 'U+000-5FF', weight: '400'
     });
-
-    // don't wait for the render tree, initiate an immediate fetch!
     font.load().then(function() {
-      // apply the font (which may re-render text and cause a page reflow)
-      // after the font has finished downloading
-      document.fonts.add(font);
-      var clsBlock1 = document.querySelector('.cls-block-1')
-      clsBlock1.classList.add('webFontLoaded')
+      document.body.classList.add('webFontLoaded')
     });
   </script>
   
