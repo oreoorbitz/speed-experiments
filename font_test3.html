@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font optmization example</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&display=swap" rel="alternate stylesheet"  title="styles" as="style" onload="this.title='';this.rel='stylesheet'">
+  <link rel="stylesheet" href="style.css" rel="alternate stylesheet"  title="styles" as="style" onload="this.title='';this.rel='stylesheet'">
+  
+  <script>
+    var font = new FontFace("Awesome Font", "url(https://fonts.gstatic.com/s/andikanewbasic/v1/taiRGn9tCp-44eleq5Q-mszJivxSeKeeEUCAFz91Cg.woff2) format('woff2')", {
+      style: 'normal', unicodeRange: 'U+000-5FF', weight: '400'
+    });
+
+    // don't wait for the render tree, initiate an immediate fetch!
+    font.load().then(function() {
+      // apply the font (which may re-render text and cause a page reflow)
+      // after the font has finished downloading
+      document.fonts.add(font);
+      var clsBlock1 = document.querySelector('.cls-block-1')
+      clsBlock1.classList.add('webFontLoaded')
+    });
+  </script>
+  
+</head> 
+
+<body> 
+  <div class="cls-block-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias veniam ab impedit est fugit earum a nostrum inventore facilis vel optio temporibus enim tempora laboriosam qui, aperiam, explicabo quas.
+  </div>
+  <div class="cls-block-2">
+    this block shouldn't be moved!
+    <div class="cls-block-3">
+      This block shouldn't moved either!
+    </div>
+  </div>
+
+
+</body>
+</html>
