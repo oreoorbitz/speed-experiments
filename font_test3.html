@@ -13,12 +13,15 @@
   <link href="style.css" rel="stylesheet" >
   
   <script>
-    var font = new FontFace("Andika New Basic", "url(https://fonts.gstatic.com/s/andikanewbasic/v1/taiRGn9tCp-44eleq5Q-mszJivxSeKieEUCAFz8.woff2) format('woff2')", {
-      style: 'normal', unicodeRange: 'U+000-5FF', weight: '400'
-    });
-    font.load().then(function() {
-      document.body.classList.add('webFontLoaded')
-    });
+    window.addEventListener('DOMContentLoaded', event => {
+      var font = new FontFace("Andika New Basic", "url(https://fonts.gstatic.com/s/andikanewbasic/v1/taiRGn9tCp-44eleq5Q-mszJivxSeKieEUCAFz8.woff2) format('woff2')", {
+        style: 'normal', unicodeRange: 'U+000-5FF', weight: '400'
+      });
+      font.load().then(function() {
+        document.body.classList.add('webFontLoaded')
+      });
+    })
+
   </script>
   
 </head> 
