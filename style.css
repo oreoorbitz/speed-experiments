@@ -14,11 +14,22 @@
   transition: all 100ms;
 }
 
+.vertical_center {
+  display: block;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  margin: 50% 0;
+}
+
 .fallback_font {
   position: absolute;
-  top: 0;
+  top: 0%;
   z-index: 2;
   font-family: 'Liberation Serif';
+  Letter-spacing: 0.75px;
+  line-height: 1.6;
+
   
 }
 

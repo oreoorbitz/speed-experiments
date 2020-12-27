@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font optmization example</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Langar&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Langar&display=swap" rel="alternate stylesheet"  title="styles" as="style" onload="this.title='';this.rel='stylesheet'">
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    @font-face {
+      font-family: 'Liberation Serif';
+      src: local('Liberation Serif');
+      font-weight: 400;
+    }
+  </style>
+
+
+</head> 
+
+<body> 
+<div class="vertical_center">
+  <div class="fallback_font">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias veniam ab impedit est fugit earum a nostrum inventore facilis vel optio temporibus enim tempora laboriosam qui, aperiam, explicabo quas.
+   </div>
+   <div class="web_font">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias veniam ab impedit est fugit earum a nostrum inventore facilis vel optio temporibus enim tempora laboriosam qui, aperiam, explicabo quas.
+  </div>
+</div>
+</body>
+</html>
