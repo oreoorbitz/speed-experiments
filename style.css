@@ -1,44 +1,17 @@
-.cls-block-1, .cls-block-2, .cls-block-3 {
+.cls-block-1 {
   font-family: 'Liberation Serif';
   font-weight: initial;
   word-spacing: initial;
   line-height: 1.6;
   letter-spacing: 1.05px;
 }
-.webFontLoaded .cls-block-1 {
+.webFontLoaded  .cls-block-1{
   font-family: 'Andika New Basic';
   font-weight: initial;
   word-spacing: initial;
   line-height: initial;
   letter-spacing: initial;
   transition: all 100ms;
-}
-.webFontLoaded  .cls-block-2 {
-  width: 90%;
-  height: 77vh;
-  background-color: gray;
-  opacity: 0.9;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 23px;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Andika New Basic', 'Liberation Serif';
-  text-align: center;      
-}
-.webFontLoaded  .cls-block-3 {
-  width: 90%;
-  height: 60vh;
-  background-color: blue;
-  font-size: 17px;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  font-family: 'Andika New Basic', 'Liberation Serif';
 }
 
 .fallback_font {
