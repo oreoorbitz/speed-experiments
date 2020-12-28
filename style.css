@@ -3,11 +3,11 @@
   font-weight: initial;
   word-spacing: initial;
   line-height: 1.6;
-  letter-spacing: 1.05px;
-  font-size: 16px;
+  Letter-spacing: 0.69px;
+  line-height: 1.45;
 }
 .webFontLoaded  .cls-block-1{
-  font-family: 'Andika New Basic';
+  font-family: 'Langar';
   font-weight: initial;
   word-spacing: initial;
   line-height: initial;
@@ -24,13 +24,11 @@
 
 .fallback_font {
   position: absolute;
-  top: 0%;
+  top: 40%;
   z-index: 2;
   font-family: 'Liberation Serif';
-  Letter-spacing: 0.75px;
-  line-height: 1.6;
-
-  
+  Letter-spacing: 0.69px;
+  line-height: 1.45;
 }
 
 .web_font {
