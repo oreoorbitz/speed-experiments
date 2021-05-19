@@ -14,14 +14,9 @@ https://flickity.metafizzy.co
 <body>
 
   <div class="main-carousel">
-    <div class="carousel-cell">
-      <img src="img/chewy-L8o2sIPSOnc-unsplash.jpg">
-    </div>
+
     <div class="carousel-cell" >
-      <img src="img/eduardo-soares-Ns-4izVJ6go-unsplash.jpg">
-    </div>
-    <div class="carousel-cell" >
-      <img src="img/ulia-drobnaia-MpAXHGmjz4U-unsplash.jpg">
+      <img  src="img/ulia-drobnaia-MpAXHGmjz4U-unsplash.jpg">
     </div>
   </div>
 
@@ -83,15 +78,6 @@ https://flickity.metafizzy.co
  */
 (function(i,n){if(typeof define=="function"&&define.amd){define(["flickity/js/index","imagesloaded/imagesloaded"],function(t,e){return n(i,t,e)})}else if(typeof module=="object"&&module.exports){module.exports=n(i,require("flickity"),require("imagesloaded"))}else{i.Flickity=n(i,i.Flickity,i.imagesLoaded)}})(window,function t(e,i,s){"use strict";i.createMethods.push("_createImagesLoaded");var n=i.prototype;n._createImagesLoaded=function(){this.on("activate",this.imagesLoaded)};n.imagesLoaded=function(){if(!this.options.imagesLoaded){return}var n=this;function t(t,e){var i=n.getParentCell(e.img);n.cellSizeChange(i&&i.element);if(!n.options.freeScroll){n.positionSliderAtSelected()}}s(this.slider).on("progress",t)};return i});
 </script>
-<script>
-window.addEventListener('DOMContentLoaded', e => {
-  var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true
-});
-})
-</script>
+
 </body>
 </html>
