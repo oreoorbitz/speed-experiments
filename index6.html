@@ -18,8 +18,14 @@ https://flickity.metafizzy.co
     <div class="carousel-cell" >
       <img  src="img/ulia-drobnaia-MpAXHGmjz4U-unsplash.jpg">
     </div>
+    <div class="carousel-cell" >
+      <img  src="img/ulia-drobnaia-MpAXHGmjz4U-unsplash.jpg">
+    </div>
+    <div class="carousel-cell" >
+      <img  src="img/ulia-drobnaia-MpAXHGmjz4U-unsplash.jpg">
+    </div>
   </div>
-
+  <img  src="img/ulia-drobnaia-MpAXHGmjz4U-unsplash.jpg">
 <script>
   /*!
  * Flickity PACKAGED v2.2.2
@@ -77,6 +83,18 @@ https://flickity.metafizzy.co
  * enables imagesLoaded option for Flickity
  */
 (function(i,n){if(typeof define=="function"&&define.amd){define(["flickity/js/index","imagesloaded/imagesloaded"],function(t,e){return n(i,t,e)})}else if(typeof module=="object"&&module.exports){module.exports=n(i,require("flickity"),require("imagesloaded"))}else{i.Flickity=n(i,i.Flickity,i.imagesLoaded)}})(window,function t(e,i,s){"use strict";i.createMethods.push("_createImagesLoaded");var n=i.prototype;n._createImagesLoaded=function(){this.on("activate",this.imagesLoaded)};n.imagesLoaded=function(){if(!this.options.imagesLoaded){return}var n=this;function t(t,e){var i=n.getParentCell(e.img);n.cellSizeChange(i&&i.element);if(!n.options.freeScroll){n.positionSliderAtSelected()}}s(this.slider).on("progress",t)};return i});
+</script>
+
+<script>
+  const x = document.querySelector('.main-carousel')
+  flickity
+
+  var flkty = new Flickity( x, {
+    // options
+    cellAlign: 'left',
+    contain: true
+  }); 
+
 </script>
 
 </body>
